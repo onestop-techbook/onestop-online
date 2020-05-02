@@ -30,6 +30,7 @@
       "chap-remote-work.md",
       "chap-online-mob-tutorial.md",
       "chap-onlinejointbook.md",
+      "chap-team-build.md",
       "placeholder.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
