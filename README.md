@@ -23,11 +23,12 @@
 そして、あなたの本を技術書典に参加する1万人（あるいはそれ以上）に届けませんか？
 
 ## 執筆・配布スケジュール
-募集開始・環境構築　2020月4月29日  
-章目次確定：2020年1月15日  
-本文初稿：6月20日  
-レビュー＆追記：7月30日  
-オンライン発行　7月31日
+募集開始・環境構築：2020月4月29日
+マッハ版本文初稿：2020年5月6日
+章目次確定：2020年x月xx日
+本文初稿：2020年6月20日
+レビュー＆追記：2020年7月30日
+オンライン発行：2020年7月31日
 
 ## 著者紹介兼あとがき
 Contributers.re内に、テンプレートに従って記入ください。
@@ -45,11 +46,12 @@ Issue立ててください。
 雑談、ざっくばらんな相談については、Slackがあります。
 参加方法は、親方まで。https://twitter.com/oyakata2438
 
-## Re:VIEWの書き方
+## 執筆方法
 
-[Re:VIEWチートシート](https://gist.github.com/erukiti/c4e3189dda179a0f0b73299fb5787838) を作ってみたので、参考にしてみてください。
+本書は、easybooks を使って発行されています。easybooks では Markdown か Re:VIEW で記述します。
 
-chap-easybook.md内に書き方チュートリアルがあるので、参考にしてみてください。
+* [Markdownでの書き方](https://raw.githubusercontent.com/erukiti/easybooks/master/example/about-easybooks.md)
+* [Re:VIEWチートシート](https://gist.github.com/erukiti/c4e3189dda179a0f0b73299fb5787838) を作ってみたので、参考にしてみてください。
 
 また、プレーンテキストやWordとかでの提出も可能です。編集部にてコンバートします。
 
@@ -63,6 +65,18 @@ tarで固めたpdfがダウンロードできます。
 ## インストール
 
 細かい準備(TeX入れたり)は[『技術書をかこう！』](https://github.com/TechBooster/C89-FirstStepReVIEW-v2)に準じます。
+
+### Dockerを使う方法
+
+Dockerを使うのが一番手軽です。とても面倒なTeXのインストールなどを全てDockerでやってくれるため、何も悩むことはありません。
+
+```sh
+$ docker run -t --rm -v $(pwd):/book vvakame/review:3.2 /bin/bash -ci "cd /book && yarn && yarn build"
+```
+
+このコマンドの実行が成功すれば、コンパイルされたPDFが、`.review/Onestop-Online.pdf` として出力されています。
+
+Mac なら `open .review/Onestop-Online.pdf` で PDF を開くことができます。
 
 ### WindowsでReviewを使う方法
 
@@ -81,21 +95,15 @@ Windows10(Home/Pro問わず)であれば、WSL＋docker越しにRe:VIWEを扱う
 * Docker image : vvakame/review (tag:3.1)
 * Docker image : vvakame/review (tag:3.2)
 
+### Dockerを使わずにビルドする
 
-### Dockerを使う方法
-
-Dockerを使うのが一番手軽です。
-
-```sh
-$ docker run -t --rm -v $(pwd):/book vvakame/review:3.1 /bin/bash -ci "cd /book && yarn && yarn build"
-$ docker run -t --rm -v $(pwd):/book vvakame/review:3.2 /bin/bash -ci "cd /book && yarn && yarn build"
-
-```
-
-### Docker使わずビルド
+* TeX をインストールする
+* Ruby をインストールする
+  * review gem をインストールする
+* Node.js をインストールする
 
 ```sh
-cd articles ; review pdfmaker config.yml
+yarn && yarn build
 ```
 
 ### 権利
