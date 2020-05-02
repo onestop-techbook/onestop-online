@@ -16,7 +16,9 @@
   "review_version": 3.0,
   "texstyle": ["reviewmacro"],
   "texdocumentclass": [
-    "review-jsbook","media=ebook,paper=b5,serial_pagination=true,hiddenfolio=nikko-pc,openany,fontsize=10pt,baselineskip=15.4pt,line_length=44zw,number_of_lines=40,head_space=18mm,headsep=3mm,headheight=5mm,footskip=10mm"  ],
+    "review-jsbook",
+    "media=ebook,paper=b5,serial_pagination=true,hiddenfolio=nikko-pc,openany,fontsize=10pt,baselineskip=15.4pt,line_length=44zw,number_of_lines=40,head_space=18mm,headsep=3mm,headheight=5mm,footskip=10mm"
+  ],
   "sty_templates": {
     "url": "https://github.com/TechBooster/ReVIEW-Template/archive/2cde584d33e8a6f5e6cf647e62fb6b3123ce4dfa.zip",
     "dir": "ReVIEW-Template-2cde584d33e8a6f5e6cf647e62fb6b3123ce4dfa/articles/sty/"
@@ -25,11 +27,10 @@
   "catalog": {
     "PREDEF": ["preface.re"],
     "CHAPS": [
-
       "chap-remote-work.md",
+      "chap-online-mob-tutorial.md",
       "chap-onlinejointbook.md",
       "placeholder.md"
-
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
