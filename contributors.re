@@ -100,6 +100,21 @@ Podcast生やすお兄さんとして、複数のPodcastを掛け持ちして配
 
 　
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/mottox2_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        もっと@mottox2 https://twitter.com/mottox2\\
+        サークル名： つのぶえ出版 /
+        \end{minipage}
+    \hspace{1ex}
+//}
+フリーランスでウェブフロントエンドを中心にエンジニアリングをやっています。4年ほどリモート中心で働いていたら、いきなりリモートワークが推奨される社会になってびっくりしています。
+
+　
+
 == 表紙イラスト・デザイン　
 
 
