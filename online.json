@@ -28,6 +28,8 @@
     "PREDEF": ["preface.re"],
     "CHAPS": [
       "chap-remote-work.md",
+      "chap-hobby.md",
+      "chap-company.md",
       "chap-online-mob-tutorial.md",
       "chap-onlinejointbook.md",
       "chap-team-build.md",
