@@ -142,7 +142,22 @@ SIerの何でも屋さんから、何となくやりたいことに出会えた�
     \hspace{1ex} 
 //}
 新米ハードウェアエンジニアです。おうち時間で積読中の技術同人誌を読み進めようとしていた矢先、寄稿させていただくことになりとにかく驚いています！
+
+
+
 　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/ebichiki_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        えびちき https://twitter.com/ebichiki\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+IT企業で働くママエンジニアです。最近の楽しみはオンライン勉強会に参加すること。子持ちには参加しやすくてありがたいですね。　　
 
 == 表紙イラスト・デザイン　
 
