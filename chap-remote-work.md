@@ -472,7 +472,7 @@ NTTフレッツ, au, NURO光など、どこの光ファイバーを引くかは�
 
 #### 「VPNにつないだらSlackが見れないんですけど」
 
-VPN接続時にOpenVPNを使用している場合、Macのユーザーだけ「VPNに接続するとZoom/Slackが使えなくなる」という
+VPN接続時にOpenVPNを使用している場合、Macのユーザーだけ「VPNに接続するとZoom/Slackが使えなくなる」という声があがる時があります。
 
 OpenVPNでは、VPN接続時にVPNを通して接続する通信(社内)と
 インターネットを経由して接続する通信を区別するために、 VPNサーバー側の設定でクライアントの
@@ -482,15 +482,17 @@ OpenVPNでは、VPN接続時にVPNを通して接続する通信(社内)と
 
 WindowsのOpenVPNクライアントはVPNサーバーのこの設定に従いルーティングの追加を行います。
 
-Mac向けのOpenVPNクライアントTunnelblickの場合は、サーバ側のルーティングの設定とは
+Mac向けのOpenVPNクライアントTunnelblick[^tunnelblick] の場合は、サーバ側のルーティングの設定とは
 別にクライアントの接続の設定に「すべてのトラフィックをVPN経由で接続する」設定があるため、
 デフォルトではVPNサーバー側のルーティング設定にかかわらず全ての通信がVPN経由になります。
+
+[^tunnelblick]: https://tunnelblick.net/
 
 このため、VPNサーバーに向かった通信がインターネットに抜けていかないネットワーク構成の場合は、macOSのみ
 VPNに接続するとインターネットと通信するアプリケーションが動作しなくなり、エンドユーザーからは
 「VPNに接続するとSlackが使えない」、という管理者からすると謎の訴えを受け取ることになります。
 
-![Tunnelblickの設定](images/chap-remote-work/tunnelblick.png)
+![Tunnelblickの設定](images/chap-remote-work/tunnelblick.png?scale=0.7)
 
 この場合は、接続設定の「すべてのトラフィックをVPN経由で接続する」の設定のチェックが外れていることを確認します。
 
@@ -539,7 +541,7 @@ acl Safe_ports port 22
 
 接続するクライアントでは、Tera Termの場合は「設定」→「プロキシ」の項目でプロキシサーバーへの接続を設定してからリモートサーバーに接続します。
 
-![Tera Termの設定](images/chap-remote-work/teraterm.png)
+![Tera Termのプロキシ設定](images/chap-remote-work/teraterm.png?scale=0.7)
 
 macOSの場合は、HomeBrewからsshのプロキシツールであるcorkscrewをインストールした上で、sshの設定ファイルに次のように設定を行います。
 
@@ -555,19 +557,25 @@ Host server1
 
 ここでは、公開鍵認証を導入したOpenSSHサーバーを経由してリモートデスクトップにアクセスすることにより、リモートデスクトップにセキュアにアクセスする仕組みについて述べます。
 
-「セキュリティが強化されたDefenderファイヤウォール」のリモートデスクトップの「スコープ」設定で、「リモートIPアドレス」の接続元に「127.0.0.1」を設定し、リモートからリモートデスクトップが接続できないようにします。
+「セキュリティが強化されたDefenderファイヤウォール」の「受信の規則」の次の項目の設定を開きます。
 
-![ファイヤウォールの設定(1)](images/chap-remote-work/firewall1.png)
+- リモートデスクトップ - シャドウ(TCP受信)
+- リモートデスクトップ - ユーザーモード(TCP受信)
+- リモートデスクトップ - ユーザーモード(UDP受信)
 
-![ファイヤウォールの設定(2)](images/chap-remote-work/firewall2.png)
+「スコープ」設定で、「リモートIPアドレス」の接続元に「127.0.0.1」を設定し、リモートからリモートデスクトップが接続できないようにします。
+
+![ファイヤウォールの設定(1)](images/chap-remote-work/firewall1.png?scale=0.7)
+
+![ファイヤウォールの設定(2)](images/chap-remote-work/firewall2.png?scale=0.7)
 
 続いてOpenSSHサーバーの設定を行います。
 
 設定の「アプリと機能」→「オプション機能」からOpenSSHサーバーをインストールします。
 
-![OpenSSHサーバーのインストール(1)](images/chap-remote-work/openssh1.png)
+![OpenSSHサーバーのインストール(1)](images/chap-remote-work/openssh1.png?scale=0.5)
 
-![OpenSSHサーバーのインストール(2)](images/chap-remote-work/openssh2.png)
+![OpenSSHサーバーのインストール(2)](images/chap-remote-work/openssh2.png?scale=0.5)
 
 続いて公開鍵認証の設定を行います。
 
@@ -587,25 +595,25 @@ WindowsのOpenSSHサーバーの仕様として、公開鍵ファイルへの他
 - 「継承されたアクセス許可をこのオブジェクトの明示的なアクセス許可に変換する」をクリック
 - 「Authencatied Users」へのアクセス許可を削除
 
-![公開鍵へのアクセス許可の設定(1)](images/chap-remote-work/openssh3.png)
+![公開鍵へのアクセス許可の設定(1)](images/chap-remote-work/openssh3.png?scale=0.6)
 
-![公開鍵へのアクセス許可の設定(2)](images/chap-remote-work/openssh4.png)
+![公開鍵へのアクセス許可の設定(2)](images/chap-remote-work/openssh4.png?scale=0.6)
 
-![公開鍵へのアクセス許可の設定(3)](images/chap-remote-work/openssh5.png)
+![公開鍵へのアクセス許可の設定(3)](images/chap-remote-work/openssh5.png?scale=0.6)
 
-![公開鍵へのアクセス許可の設定(4)](images/chap-remote-work/openssh6.png)
+![公開鍵へのアクセス許可の設定(4)](images/chap-remote-work/openssh6.png?scale=0.5)
 
-![公開鍵へのアクセス許可の設定(5)](images/chap-remote-work/openssh7.png)
+![公開鍵へのアクセス許可の設定(5)](images/chap-remote-work/openssh7.png?scale=0.6)
 
 最後に、サービスで「OpenSSH SSH Server」を起動すると、公開鍵認証でのSSHのポート転送を経由した接続でのみリモートデスクトップが可能になります。
 
-![サービスの起動設定](images/chap-remote-work/openssh8.png)
+![サービスの起動設定](images/chap-remote-work/openssh8.png?scale=0.8)
 
 接続元のデスクトップからSSHでWindowsデスクトップに接続し、localhostのリモートデスクトップのポート(3389)にポート転送します。リモートデスクトップでポート転送の転送元のポート(この場合13389)にアクセスすると、SSHのポート転送を経由して、ファイヤウォールでアクセスを制限したリモートデスクトップにアクセスできます。
 
-![ポート転送の設定(Tera Termの場合)](images/chap-remote-work/openssh10.png)
+![ポート転送の設定(Tera Termの場合)](images/chap-remote-work/openssh10.png?scale=0.6)
 
-![ポート転送を経由したリモートデスクトップ接続](images/chap-remote-work/openssh11.png)
+![ポート転送を経由したリモートデスクトップ接続](images/chap-remote-work/openssh11.png?scale=0.8)
 
 ### VPN依存環境からの脱却
 
