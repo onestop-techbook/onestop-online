@@ -341,9 +341,146 @@ Macを使ってる人は特に解像度の高いディスプレイをオスス�
 Appleユーザーなら多分トラックパッド一択だと思いますが。
 
 ### ネットワーク関係のTips
+
 #### 「VPNにつないだらSlackが見れないんですけど」
-#### sshのプロキシー接続
+
+VPN接続時にOpenVPNを使用している場合、Macのユーザーだけ「VPNに接続するとZoom/Slackが使えなくなる」という
+
+OpenVPNでは、VPN接続時にVPNを通して接続する通信(社内)と
+インターネットを経由して接続する通信を区別するために、 VPNサーバー側の設定でクライアントの
+接続にルーティングを追加します。 [^openvpn-routing]
+
+[^openvpn-routing]: https://openvpn.net/community-resources/setting-up-routing/
+
+WindowsのOpenVPNクライアントはVPNサーバーのこの設定に従いルーティングの追加を行います。
+
+Mac向けのOpenVPNクライアントTunnelblickの場合は、サーバ側のルーティングの設定とは
+別にクライアントの接続の設定に「すべてのトラフィックをVPN経由で接続する」設定があるため、
+デフォルトではVPNサーバー側のルーティング設定にかかわらず全ての通信がVPN経由になります。
+
+このため、VPNサーバーに向かった通信がインターネットに抜けていかないネットワーク構成の場合は、macOSのみ
+VPNに接続するとインターネットと通信するアプリケーションが動作しなくなり、エンドユーザーからは
+「VPNに接続するとSlackが使えない」、という管理者からすると謎の訴えを受け取ることになります。
+
+![Tunnelblickの設定](images/chap-remote-work/tunnelblick.png)
+
+この場合は、接続設定の「すべてのトラフィックをVPN経由で接続する」の設定のチェックが外れていることを確認します。
+
+#### 踏み台経由のssh経由接続
+
+作業先のサーバにsshでリモートログインする際、いわゆる「踏み台」と呼ばれる途中に中継するサーバーを経由する場合は、sshのクライアントの設定ファイル [^sshconfig]にProxyCommandを記述することにより、直接リモートログイン出来ます。
+
+[^sshconfig]: デフォルトではホームディレクトリー配下の .ssh/config 
+
+```
+Host server1
+  HostName 192.168.100.8
+  User pi
+Host server2-proxy
+  HostName 192.168.100.18
+  User pi
+  ProxyCommand ssh -q -W %h:%p server1
+```
+
+Windows10でも標準で提供されているOpenSSHクライアントを使うことにより踏み台経由のssh接続を行う事ができます。ただし、WindowsのOpenSSHでは、ProxyCommandに記述するコマンドが「空白を含まないフルパス」[^win2004] でなければならない、という制約があります。このため。Windowsでは、sshのクライアントの設定ファイル [^sshco
+nfigwin]にssh.exeへのパスをフルパスで記述します。
+
+[^win2004]:Windows10の次のアップデート(May 2020 Update)で解消予定です。
+
+[^sshconfigwin]: デフォルトでは%USERPROFILE%\.ssh\config
+
+```
+Host server1
+  HostName 192.168.10.8
+  User pi
+Host server2-proxy
+  HostName 192.168.10.18
+  User pi
+  ProxyCommand C:\Windows\System32\OpenSSH\ssh.exe -q -W %h:%p server1
+```
+
+#### httpプロキシサーバー経由のssh接続
+
+SquidなどプロキシサーバーにVPNなどを経由してアクセス可能な場合は、proxyサーバーへのhttp接続を経由してssh接続できます。
+
+プロキシサーバー経由でssh接続する場合は、httpのCONNECTメソッドを使用します。httpsの通信以外でCONNECTメソッドを使用可能にするために、Squidの設定ファイル(`/etc/squid/squid.conf`)に次の設定を追加します。
+
+```
+acl SSL_ports port 22
+acl Safe_ports port 22
+```
+
+接続するクライアントでは、Tera Termの場合は「設定」→「プロキシ」の項目でプロキシサーバーへの接続を設定してからリモートサーバーに接続します。
+
+![Tera Termの設定](images/chap-remote-work/teraterm.png)
+
+macOSの場合は、HomeBrewからsshのプロキシツールであるcorkscrewをインストールした上で、sshの設定ファイルに次のように設定を行います。
+
+```
+Host server1
+  User pi
+  ProxyCommand corkscrew 192.168.100.20 3128 %h %p
+```
+
 #### リモートデスクトップ接続をセキュアにする
+
+リモートワークしている場合に、Windowsサーバーやデスクトップにリモートデスクトップでログインして作業を行う場合があります。Windowsのリモートデスクトップは、リモートデスクトップのポートにアクセスできればユーザーとパスワード認証のみでログイン可能なため、セキュリティー上脆弱な仕組みを抱えています。
+
+ここでは、公開鍵認証を導入したOpenSSHサーバーを経由してリモートデスクトップにアクセスすることにより、リモートデスクトップにセキュアにアクセスする仕組みについて述べます。
+
+「セキュリティが強化されたDefenderファイヤウォール」のリモートデスクトップの「スコープ」設定で、「リモートIPアドレス」の接続元に「127.0.0.1」を設定し、リモートからリモートデスクトップが接続できないようにします。
+
+![ファイヤウォールの設定(1)](images/chap-remote-work/firewall1.png)
+
+![ファイヤウォールの設定(2)](images/chap-remote-work/firewall2.png)
+
+続いてOpenSSHサーバーの設定を行います。
+
+設定の「アプリと機能」→「オプション機能」からOpenSSHサーバーをインストールします。
+
+![OpenSSHサーバーのインストール(1)](images/chap-remote-work/openssh1.png)
+
+![OpenSSHサーバーのインストール(2)](images/chap-remote-work/openssh2.png)
+
+続いて公開鍵認証の設定を行います。
+
+メモ帳を管理者権限で起動して、`C:\ProgramData\ssh\sshd_config` に公開鍵認証の設定を行います。
+
+```
+PasswordAuthentication no
+```
+
+続いて同じくメモ帳を管理者権限で起動して、作成した公開鍵を貼り付けて`C:\ProgramData\ssh\administrators_authorized_keys` に保存します。
+
+WindowsのOpenSSHサーバーの仕様として、公開鍵ファイルへの他のユーザーからの読み取り権限を削除する必要があります。エクスプローラーで以下の操作を行います。
+
+- `C:\ProgramData\ssh\administrators_authorized_keys` を右クリックして「セキュリティ」の「詳細設定」をクリック
+- 表示されたダイアログで「続行」をクリック
+- 「アクセス許可の変更」をクリック
+- 「継承されたアクセス許可をこのオブジェクトの明示的なアクセス許可に変換する」をクリック
+- 「Authencatied Users」へのアクセス許可を削除
+
+![公開鍵へのアクセス許可の設定(1)](images/chap-remote-work/openssh3.png)
+
+![公開鍵へのアクセス許可の設定(2)](images/chap-remote-work/openssh4.png)
+
+![公開鍵へのアクセス許可の設定(3)](images/chap-remote-work/openssh5.png)
+
+![公開鍵へのアクセス許可の設定(4)](images/chap-remote-work/openssh6.png)
+
+![公開鍵へのアクセス許可の設定(5)](images/chap-remote-work/openssh7.png)
+
+最後に、サービスで「OpenSSH SSH Server」を起動すると、公開鍵認証でのSSHのポート転送を経由した接続でのみリモートデスクトップが可能になります。
+
+![サービスの起動設定](images/chap-remote-work/openssh8.png)
+
+接続元のデスクトップからSSHでWindowsデスクトップに接続し、localhostのリモートデスクトップのポート(3389)にポート転送します。リモートデスクトップでポート転送の転送元のポート(この場合13389)にアクセスすると、SSHのポート転送を経由して、ファイヤウォールでアクセスを制限したリモートデスクトップにアクセスできます。
+
+![ポート転送の設定(Tera Termの場合)](images/chap-remote-work/openssh10.png)
+
+![ポート転送を経由したリモートデスクトップ接続](images/chap-remote-work/openssh11.png)
+
+
 
 ### 誰かゼロトラストネットワーク書ける人いない？
 
