@@ -82,7 +82,6 @@ BtoB向けSaaSのバックエンド開発をしているITエンジニア。Twit
 人の力で世界を便利にする企業で働いているWebディレクター
 Podcast生やすお兄さんとして、複数のPodcastを掛け持ちして配信をしています。
 
-　
 
 　
 
@@ -99,6 +98,66 @@ Podcast生やすお兄さんとして、複数のPodcastを掛け持ちして配
 普段はフロントエンドエンジニアやってます。楽しそうなことには首を突っ込まずにはいられない性格。podcast作ったり、イラスト描いたり、写真撮ったり…物を作ってワクワクしながら生きていきたい！
 
 　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/hekitter_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        hekitter @hekitter https://twitter.com/hekitter\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+SIerの何でも屋さんから、何となくやりたいことに出会えた人。ぼちぼち落ち着きそうなので、楽しいこと増やすぞいと思った矢先にこの状況なので、書いて発散しました。
+
+　
+
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/mottox2_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        もっと@mottox2 https://twitter.com/mottox2\\
+        サークル名： つのぶえ出版 /
+        \end{minipage}
+    \hspace{1ex}
+//}
+フリーランスでウェブフロントエンドを中心にエンジニアリングをやっています。4年ほどリモート中心で働いていたら、いきなりリモートワークが推奨される社会になってびっくりしています。
+
+
+
+　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/Soya_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        Soya @thisIsSow https://twitter.com/thisIsSow\\
+        \end{minipage}
+    \hspace{1ex} 
+//}
+新米ハードウェアエンジニアです。おうち時間で積読中の技術同人誌を読み進めようとしていた矢先、寄稿させていただくことになりとにかく驚いています！
+
+
+
+　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/ebichiki_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        えびちき https://twitter.com/ebichiki\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+IT企業で働くママエンジニアです。最近の楽しみはオンライン勉強会に参加すること。子持ちには参加しやすくてありがたいですね。　　
 
 == 表紙イラスト・デザイン　
 
