@@ -127,6 +127,20 @@ SIerの何でも屋さんから、何となくやりたいことに出会えた�
 //}
 フリーランスでウェブフロントエンドを中心にエンジニアリングをやっています。4年ほどリモート中心で働いていたら、いきなりリモートワークが推奨される社会になってびっくりしています。
 
+
+
+　
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/Soya_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        Soya @thisIsSow https://twitter.com/thisIsSow\\
+        \end{minipage}
+    \hspace{1ex} 
+//}
+新米ハードウェアエンジニアです。おうち時間で積読中の技術同人誌を読み進めようとしていた矢先、寄稿させていただくことになりとにかく驚いています！
 　
 
 == 表紙イラスト・デザイン　
