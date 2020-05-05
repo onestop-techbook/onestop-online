@@ -1,3 +1,3 @@
 @echo off
-docker run --rm -v %cd%/articles:/work vvakame/review /bin/sh -c "cd /work && yarn && yarn build"
+docker run --rm -v %cd%:/book vvakame/review /bin/sh -c "cd /book && yarn && yarn build"
 pause
