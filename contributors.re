@@ -99,6 +99,20 @@ Podcast生やすお兄さんとして、複数のPodcastを掛け持ちして配
 普段はフロントエンドエンジニアやってます。楽しそうなことには首を突っ込まずにはいられない性格。podcast作ったり、イラスト描いたり、写真撮ったり…物を作ってワクワクしながら生きていきたい！
 
 　
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/hekitter_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        hekitter @hekitter https://twitter.com/hekitter\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+SIerの何でも屋さんから、何となくやりたいことに出会えた人。ぼちぼち落ち着きそうなので、楽しいこと増やすぞいと思った矢先にこの状況なので、書いて発散しました。
+
+
+
 
 //embed{
     \begin{minipage}{.1\linewidth}
