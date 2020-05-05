@@ -510,8 +510,7 @@ Host server2-proxy
   ProxyCommand ssh -q -W %h:%p server1
 ```
 
-Windows10でも標準で提供されているOpenSSHクライアントを使うことにより踏み台経由のssh接続を行う事ができます。ただし、WindowsのOpenSSHでは、ProxyCommandに記述するコマンドが「空白を含まないフルパス」[^win2004] でなければならない、という制約があります。このため。Windowsでは、sshのクライアントの設定ファイル [^sshco
-nfigwin]にssh.exeへのパスをフルパスで記述します。
+Windows10でも標準で提供されているOpenSSHクライアントを使うことにより踏み台経由のssh接続を行う事ができます。ただし、WindowsのOpenSSHでは、ProxyCommandに記述するコマンドが「空白を含まないフルパス」[^win2004] でなければならない、という制約があります。このため。Windowsでは、sshのクライアントの設定ファイル [^sshconfigwin]にssh.exeへのパスをフルパスで記述します。
 
 [^win2004]:Windows10の次のアップデート(May 2020 Update)で解消予定です。
 
