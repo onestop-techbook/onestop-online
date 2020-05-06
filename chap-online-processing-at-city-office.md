@@ -147,105 +147,56 @@ Android版マイナポータルAP
 ※画像が横に倒してあるので横にして読んでください。
 
 1. マイナポータルAPでマイナポータルにログインします。
-2. 「申請はこちら」を押下します。
 
-!["申請はこちら"](chap-online-processing-at-city-office/2.jpg?scale=0.6)
+!["「申請はこちら」を押下します"](chap-online-processing-at-city-office/2.jpg?scale=0.6)
 
-3. 郵便番号を入力し「地域を検索」を押下します。
+!["郵便番号を入力し「地域を検索」を押下します"](chap-online-processing-at-city-office/3.jpg?scale=0.6)
 
-!["郵便番号を入力し「地域を検索」"](chap-online-processing-at-city-office/3.jpg?scale=0.6)
+!["ンライン申請を受付けている市区町村なら「特別定額給付金」が表示されます"](chap-online-processing-at-city-office/4.jpg?scale=0.6)
 
-4. オンライン申請を受付けている市区町村なら「特別定額給付金」が表示されます。
+!["チェックボックスを有効にして「この条件でさがす」を押下します"](chap-online-processing-at-city-office/5.jpg?scale=0.6)
 
-!["「特別定額給付金」の表示"](chap-online-processing-at-city-office/4.jpg?scale=0.6)
+!["確認画面が出るので「申請する」を押下します"](chap-online-processing-at-city-office/6.jpg?scale=0.6)
 
-5. チェックボックスを有効にして、「この条件でさがす」を押下します。
+!["注意事項がポップアップするので「OK」を押下します"](chap-online-processing-at-city-office/7.jpg?scale=0.6)
 
-!["「特別定額給付金」をチェックして「この条件でさがす」"](chap-online-processing-at-city-office/5.jpg?scale=0.6)
+!["申請先の自治体を確認して「次へすすむ」を押下します"](chap-online-processing-at-city-office/8.jpg?scale=0.6)
 
-6. 確認画面が出るので「申請する」を押下します。
+!["申請するスマホのブラウザや「アプリの確認」「マイナンバーカードの確認」「署名用電子署名書の暗証番号の確認」を聞かれますので、チェックボックスを有効にして「次へすすむ」を押下します"](chap-online-processing-at-city-office/9.jpg?scale=0.6)
 
-!["確認画面の表示して「申請する」"](chap-online-processing-at-city-office/6.jpg?scale=0.6)
+!["メールアドレス、電話番号の入力をして「次へすすむ」を押下します"](chap-online-processing-at-city-office/10.jpg?scale=0.6)
 
-7. 注意事項がポップアップするので「OK」を押下します。
+!["個人情報の入力画面になります、マイナンバーカードから情報を補完できるので、「マイナンバーカードを読み取り」を押下します"](chap-online-processing-at-city-office/11.jpg?scale=0.6)
 
-!["注意事項を確認して「OK」"](chap-online-processing-at-city-office/7.jpg?scale=0.6)
+!["確認画面になるので「カードを読み取る」を押下します"](chap-online-processing-at-city-office/12.jpg?scale=0.6)
 
-8. 申請先の市区町村があっていることを確認して「次へすすむ」を押下します。
+!["マイナポータルAPアプリが起動し、「券面事項入力補助用」の4桁の番号を入力して「次へ」を押下して、マイナンバーカードを読み取ります"](chap-online-processing-at-city-office/13.jpg?scale=0.4)
 
-!["申請先市区町村の確認して「次へすすむ」"](chap-online-processing-at-city-office/8.jpg?scale=0.6)
+!["読み取りが完了すると、氏名、住所、生年月日などが入力済みになっているので足りない箇所を入力して「次へすすむ」を押下します。（次の次の図にすすむ、「入力内容を保存」を押下すると次の図にすすむ）"](chap-online-processing-at-city-office/14.jpg?scale=0.6)
 
-9. 申請するスマホのブラウザや「アプリの確認」「マイナンバーカードの確認」「署名用電子署名書の暗証番号の確認」を聞かれますので、チェックボックスを有効にして「次へすすむ」を押下します。
+!["入力内容の保存をしたい人は、ここでできます"](chap-online-processing-at-city-office/15.jpg?scale=0.6)
 
-!["スマホスペックやアプリの確認して「次へすすむ」"](chap-online-processing-at-city-office/9.jpg?scale=0.6)
+!["入力内容の保存して戻って入力再開、世帯主で扶養家族の入力が必要な方は「給付対象者　２」以降も入力します"](chap-online-processing-at-city-office/16.jpg?scale=0.6)
 
-10. メールアドレス、電話番号の入力をして「次へすすむ」を押下します。
+!["受取口座情報を入力し「次へすすむ」を押下します"](chap-online-processing-at-city-office/17.jpg?scale=0.6)
 
-!["メールアドレス、電話番号の入力して「次へすすむ」"](chap-online-processing-at-city-office/10.jpg?scale=0.6)
+!["受取口座情報の確認画面になりますので「次へすすむ」を押下します"](chap-online-processing-at-city-office/18.jpg?scale=0.6)
 
-11. 個人情報の入力画面になります、マイナンバーカードから情報を補完できるので、「マイナンバーカードを読み取り」を押下します。
+!["添付資料の登録します、銀行口座の確認として「キャッシュカード」を撮影するか、「オンラインバンキングのキャプチャー画面」をアップロードします"](chap-online-processing-at-city-office/19.png?scale=0.6)
 
-!["個人情報の入力画面から「マイナンバーカードを読み取り」"](chap-online-processing-at-city-office/11.jpg?scale=0.6)
+!["アップロードが終わったら「次へすすむ」を押下します"](chap-online-processing-at-city-office/20.png?scale=0.6)
 
-12. 確認画面になるので「カードを読み取る」を押下します。
+!["同意事項が出るので確認して「以上を確認・同意し、次へ」を押下します"](chap-online-processing-at-city-office/21.png?scale=0.6)
 
-!["「マイナンバーカードを読み取る」"](chap-online-processing-at-city-office/12.jpg?scale=0.6)
+!["電子署名の付与確認画面になり、「電子署名を付与する」を押下します"](chap-online-processing-at-city-office/22.png?scale=0.6)
 
-13. マイナポータルAPアプリが起動し、「券面事項入力補助用」の4桁の番号を入力して「次へ」を押下して、マイナンバーカードを読み取ります。
+!["マイナポータルAPアプリが起動します「署名用電子証明書」のパスワードを入力し「次へ」を押下します"](chap-online-processing-at-city-office/23.jpg?scale=0.4)
 
-!["「券面事項入力補助用」の4桁の番号を入力して「次へ」"](chap-online-processing-at-city-office/13.jpg?scale=0.6)
+!["マイナンバーカードの署名用電子証明書が読み取れました"](chap-online-processing-at-city-office/24.jpg?scale=0.4)
 
-14. 読み取りが完了すると、氏名、住所、生年月日などが入力済みになっているので足りない箇所を入力して「次へすすむ」を押下します。（「入力内容を保存」を押下すると15.へすすむ）
+!["送信を実行します、申請する市区町村を確認して「送信する」を押下します"](chap-online-processing-at-city-office/25.jpg?scale=0.6)
 
-!["足りない箇所を入力して「次へすすむ」"](chap-online-processing-at-city-office/14.jpg?scale=0.6)
-
-15. 入力内容の保存をしたい人は、ここでできます。
-
-!["入力内容の保存"](chap-online-processing-at-city-office/15.jpg?scale=0.6)
-
-16. 入力内容の保存して戻って入力再開、世帯主で扶養家族の入力が必要な方は「給付対象者　２」以降も入力します。
-
-!["個人情報の入力画面で扶養家族の入力"](chap-online-processing-at-city-office/16.jpg?scale=0.6)
-
-17. 受取口座情報を入力し「次へすすむ」を押下します。
-
-!["受取口座情報を入力して「次へすすむ」"](chap-online-processing-at-city-office/17.jpg?scale=0.6)
-
-18. 受取口座情報の確認画面になりますので「次へすすむ」を押下します。 
-
-!["受取口座情報の確認画面で「次へすすむ」"](chap-online-processing-at-city-office/18.jpg?scale=0.6)
-
-19. 添付資料の登録します、銀行口座の確認として「キャッシュカード」を撮影するか、「オンラインバンキングのキャプチャー画面」をアップロードします。
-
-!["添付資料の登録"](chap-online-processing-at-city-office/19.png?scale=0.6)
-
-20. アップロードが終わったら「次へすすむ」を押下します。
-
-!["アップロード後「次へすすむ」"](chap-online-processing-at-city-office/20.png?scale=0.6)
-
-21. 同意事項が出るので確認して「以上を確認・同意し、次へ」を押下します。
-
-!["同意事項に確認・同意して次へ"](chap-online-processing-at-city-office/21.png?scale=0.6)
-
-22. 電子署名の付与確認画面になります「電子署名を付与する」を押下します。
-
-!["「電子署名を付与する」"](chap-online-processing-at-city-office/22.png?scale=0.6)
-
-23. マイナポータルAPアプリが起動します「署名用電子証明書」のパスワードを入力し「次へ」を押下します。
-
-!["「署名用電子証明書」のパスワードを入力して「次へ」"](chap-online-processing-at-city-office/23.jpg?scale=0.6)
-
-24. マイナンバーカードの署名用電子証明書が読み取れました。
-
-!["マイナンバーカードの署名用電子証明書の読み取り完了"](chap-online-processing-at-city-office/24.jpg?scale=0.6)
-
-25. 送信を実行します、申請する市区町村を確認して「送信する」を押下します。
-
-!["申請する市区町村を確認して「送信する」"](chap-online-processing-at-city-office/25.jpg?scale=0.6)
-
-26. 受付番号が表示されたら申請は完了、念のため「控えをダウンロードする」か「登録アドレスに送信」のどちらかを押下して控えを取っておきましょう。
-
-!["申請は完了「控えをダウンロードする」か「登録アドレスに送信」を行っておく"](chap-online-processing-at-city-office/26.jpg?scale=0.6)
+!["受付番号が表示されたら申請は完了、念のため「控えをダウンロードする」か「登録アドレスに送信」のどちらかを押下して控えを取っておきましょう"](chap-online-processing-at-city-office/26.jpg?scale=0.6)
 
 27. 申請完了です。
 
