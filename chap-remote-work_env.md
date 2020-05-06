@@ -108,12 +108,13 @@ https://www.desktopvpn.net/download/
 
 ・内部的にはWindowsのRemoteDesktopサービスを使ってるのですが、このサービスが上がってないとダメです。プロパティからスタートアップの種類を「自動」に変更しておきましょう。
 ![“リモートデスクトップサービス“](chap-remote-work_env/RemoteDesktop.png?scale=0.6)
-![“設定例“](chap-remote-work_env/RemoteDesktop2.png?scale=0.6)
+![“設定例“](chap-remote-work_env/RemoteDesktop2.png?scale=0.7)
 
 ・Windowsの電源設定も見直しておきましょう。1日経ったら繋がらなくなった（PCの電源切れてた）とかはだいたいこれが悪さをしていることが多いです。
 
 入り方はコントロールパネルから、電源オプションを選択し
-![“電源設定の入り方1“](chap-remote-work_env/PowerSetting1.png?scale=0.6)
+![“電源設定の入り方1“](chap-remote-work_env/PowerSetting1.png?scale=0.7)
+
 プラン設定の変更から
 ![“電源設定の入り方2“](chap-remote-work_env/PowerSetting2.png?scale=0.6)
 詳細な電源設定の変更に入っておきましょう。
