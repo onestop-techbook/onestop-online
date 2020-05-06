@@ -28,16 +28,16 @@
     "CHAPS": [
       "chap-remote-work.md",
       "chap-remote-work_env.md",
-      "chap-hobby.md",
       "chap-company.md",
-      "chap-online-mob-tutorial.md",
-      "chap-onlinejointbook.md",
-      "chap-team-build.md",
       "chap-online-newcommer.md",
+      "chap-team-build.md",
+      "chap-online-mob-tutorial.md",
+      "chap-zoommeetup.md",
+      "chap-onlineparty.md",
       "chap-online-processing-at-city-office.md",
       "chap-online-hobby.md",
-      "chap-zoommeetup.md",
-      "chap-onlineparty.md"
+      "chap-hobby.md",
+      "chap-onlinejointbook.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
