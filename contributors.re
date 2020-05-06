@@ -216,7 +216,7 @@ Twitterでも適当に絡んでください、よろしくおねがいします�
         \includegraphics[width=.75\linewidth]{images/contributors/nanami_400x400.png}
     \end{minipage}
     \begin{minipage}{.89\linewidth}
-        七海 @appGeneu_73 https://twitter.com/appGeneu\_73\\
+        七海 @appGeneu\_73 https://twitter.com/appGeneu\_73\\
         サークル名： 七海周遊記
         \end{minipage}
     \hspace{1ex}
