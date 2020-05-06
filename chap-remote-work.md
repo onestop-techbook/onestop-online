@@ -517,20 +517,20 @@ NTTフレッツ, au, NURO光など、どこの光ファイバーを引くかは�
 VPN接続時にOpenVPNを使用している場合、Macのユーザーだけ「VPNに接続するとZoom/Slackが使えなくなる」という声があがる時があります。
 
 OpenVPNでは、VPN接続時にVPNを通して接続する通信(社内)と
-インターネットを経由して接続する通信を区別するために、 VPNサーバー側の設定でクライアントの
+インターネットを経由して接続する通信を区別するために、 VPNサーバ側の設定でクライアントの
 接続にルーティングを追加します。 [^openvpn-routing]
 
 [^openvpn-routing]: https://openvpn.net/community-resources/setting-up-routing/
 
-WindowsのOpenVPNクライアントはVPNサーバーのこの設定に従いルーティングの追加を行います。
+WindowsのOpenVPNクライアントはVPNサーバのこの設定に従いルーティングの追加を行います。
 
 Mac向けのOpenVPNクライアントTunnelblick[^tunnelblick] の場合は、サーバ側のルーティングの設定とは
 別にクライアントの接続の設定に「すべてのトラフィックをVPN経由で接続する」設定があるため、
-デフォルトではVPNサーバー側のルーティング設定にかかわらず全ての通信がVPN経由になります。
+デフォルトではVPNサーバ側のルーティング設定にかかわらず全ての通信がVPN経由になります。
 
 [^tunnelblick]: https://tunnelblick.net/
 
-このため、VPNサーバーに向かった通信がインターネットに抜けていかないネットワーク構成の場合は、macOSのみ
+このため、VPNサーバに向かった通信がインターネットに抜けていかないネットワーク構成の場合は、macOSのみ
 VPNに接続するとインターネットと通信するアプリケーションが動作しなくなり、エンドユーザーからは
 「VPNに接続するとSlackが使えない」、という管理者からすると謎の訴えを受け取ることになります。
 
@@ -540,7 +540,7 @@ VPNに接続するとインターネットと通信するアプリケーショ�
 
 #### 踏み台経由のssh経由接続
 
-作業先のサーバにsshでリモートログインする際、いわゆる「踏み台」と呼ばれる途中に中継するサーバーを経由する場合は、sshのクライアントの設定ファイル [^sshconfig]にProxyCommandを記述することにより、直接リモートログイン出来ます。
+作業先のサーバにsshでリモートログインする際、いわゆる「踏み台」と呼ばれる途中に中継するサーバを経由する場合は、sshのクライアントの設定ファイル [^sshconfig]にProxyCommandを記述することにより、直接リモートログイン出来ます。
 
 [^sshconfig]: デフォルトではホームディレクトリー配下の .ssh/config
 
@@ -570,18 +570,18 @@ Host server2-proxy
   ProxyCommand C:\Windows\System32\OpenSSH\ssh.exe -q -W %h:%p server1
 ```
 
-#### httpプロキシサーバー経由のssh接続
+#### httpプロキシサーバ経由のssh接続
 
-SquidなどプロキシサーバーにVPNなどを経由してアクセス可能な場合は、proxyサーバーへのhttp接続を経由してssh接続できます。
+SquidなどプロキシサーバにVPNなどを経由してアクセス可能な場合は、proxyサーバへのhttp接続を経由してssh接続できます。
 
-プロキシサーバー経由でssh接続する場合は、httpのCONNECTメソッドを使用します。httpsの通信以外でCONNECTメソッドを使用可能にするために、Squidの設定ファイル(`/etc/squid/squid.conf`)に次の設定を追加します。
+プロキシサーバ経由でssh接続する場合は、httpのCONNECTメソッドを使用します。httpsの通信以外でCONNECTメソッドを使用可能にするために、Squidの設定ファイル(`/etc/squid/squid.conf`)に次の設定を追加します。
 
 ```
 acl SSL_ports port 22
 acl Safe_ports port 22
 ```
 
-接続するクライアントでは、Tera Termの場合は「設定」→「プロキシ」の項目でプロキシサーバーへの接続を設定してからリモートサーバーに接続します。
+接続するクライアントでは、Tera Termの場合は「設定」→「プロキシ」の項目でプロキシサーバへの接続を設定してからリモートサーバに接続します。
 
 ![Tera Termのプロキシ設定](images/chap-remote-work/teraterm.png?scale=0.7)
 
@@ -595,9 +595,9 @@ Host server1
 
 #### リモートデスクトップ接続をセキュアにする
 
-リモートワークしている場合に、Windowsサーバーやデスクトップにリモートデスクトップでログインして作業を行う場合があります。Windowsのリモートデスクトップは、リモートデスクトップのポートにアクセスできればユーザーとパスワード認証のみでログイン可能なため、セキュリティー上脆弱な仕組みを抱えています。
+リモートワークしている場合に、Windowsサーバやデスクトップにリモートデスクトップでログインして作業を行う場合があります。Windowsのリモートデスクトップは、リモートデスクトップのポートにアクセスできればユーザーとパスワード認証のみでログイン可能なため、セキュリティ上脆弱な仕組みを抱えています。
 
-ここでは、公開鍵認証を導入したOpenSSHサーバーを経由してリモートデスクトップにアクセスすることにより、リモートデスクトップにセキュアにアクセスする仕組みについて述べます。
+ここでは、公開鍵認証を導入したOpenSSHサーバを経由してリモートデスクトップにアクセスすることにより、リモートデスクトップにセキュアにアクセスする仕組みについて述べます。
 
 「セキュリティが強化されたDefenderファイヤウォール」の「受信の規則」の次の項目の設定を開きます。
 
@@ -611,17 +611,19 @@ Host server1
 
 ![ファイヤウォールの設定(2)](images/chap-remote-work/firewall2.png?scale=0.7)
 
-続いてOpenSSHサーバーの設定を行います。
+続いてOpenSSHサーバの設定を行います。
 
-設定の「アプリと機能」→「オプション機能」からOpenSSHサーバーをインストールします。
+設定の「アプリと機能」→「オプション機能」からOpenSSHサーバをインストールします。
 
-![OpenSSHサーバーのインストール(1)](images/chap-remote-work/openssh1.png?scale=0.5)
+![OpenSSHサーバのインストール(1)](images/chap-remote-work/openssh1.png?scale=0.5)
 
-![OpenSSHサーバーのインストール(2)](images/chap-remote-work/openssh2.png?scale=0.5)
+![OpenSSHサーバのインストール(2)](images/chap-remote-work/openssh2.png?scale=0.5)
 
 続いて公開鍵認証の設定を行います。
 
-メモ帳を管理者権限で起動して、`C:\ProgramData\ssh\sshd_config` に公開鍵認証の設定を行います。
+メモ帳を管理者権限で起動して、`C:\ProgramData\ssh\sshd_config` に[^programdata]パスワードでの認証を無効とする設定を追加します。
+
+[^programdata]: `%ProgramData%` をカスタマイズしている場合は読み替えてください
 
 ```
 PasswordAuthentication no
@@ -629,7 +631,7 @@ PasswordAuthentication no
 
 続いて同じくメモ帳を管理者権限で起動して、作成した公開鍵を貼り付けて`C:\ProgramData\ssh\administrators_authorized_keys` に保存します。
 
-WindowsのOpenSSHサーバーの仕様として、公開鍵ファイルへの他のユーザーからの読み取り権限を削除する必要があります。エクスプローラーで以下の操作を行います。
+WindowsのOpenSSHサーバの仕様として、公開鍵ファイルへの他のユーザーからの読み取り権限を削除する必要があります。エクスプローラーで以下の操作を行います。
 
 - `C:\ProgramData\ssh\administrators_authorized_keys` を右クリックして「セキュリティ」の「詳細設定」をクリック
 - 表示されたダイアログで「続行」をクリック
