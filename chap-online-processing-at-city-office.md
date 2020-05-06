@@ -128,7 +128,6 @@ Android版マイナポータルAP[https://play.google.com/store/apps/details?id=
 
 1. マイナポータルAPでマイナポータルにログインします。
 2. 「申請はこちら」を押下します。
-f:id:hideaki_kawahara:20200501122548j:plain:w300
 !["2"](chap-online-processing-at-city-office/2.jpg?scale=0.3)
 
 3. 郵便番号を入力し「地域を検索」を押下します。
