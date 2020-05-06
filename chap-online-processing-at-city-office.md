@@ -128,90 +128,115 @@ Android版マイナポータルAP[https://play.google.com/store/apps/details?id=
 
 1. マイナポータルAPでマイナポータルにログインします。
 2. 「申請はこちら」を押下します。
-!["2"](chap-online-processing-at-city-office/2.jpg?scale=0.5)
+
+!["2"](chap-online-processing-at-city-office/2.jpg?scale=0.3)
 
 3. 郵便番号を入力し「地域を検索」を押下します。
-!["3"]((chap-online-processing-at-city-office/3.jpg?scale=0.5)
+
+!["3"]((chap-online-processing-at-city-office/3.jpg?scale=0.3)
 
 4. オンライン申請を受付けている市区町村なら「特別定額給付金」が表示されます。
-!["4"]((chap-online-processing-at-city-office/4.jpg?scale=0.5)
+
+!["4"]((chap-online-processing-at-city-office/4.jpg?scale=0.3)
 
 5. チェックボックスを有効にして、「この条件でさがす」を押下します。
-!["5"]((chap-online-processing-at-city-office/5.jpg?scale=0.5)
+
+!["5"]((chap-online-processing-at-city-office/5.jpg?scale=0.3)
 
 6. 確認画面が出るので「申請する」を押下します。
-!["6"]((chap-online-processing-at-city-office/6.jpg?scale=0.5)
+
+!["6"]((chap-online-processing-at-city-office/6.jpg?scale=0.3)
 
 7. 注意事項がポップアップするので「OK」を押下します。
-!["6"]((chap-online-processing-at-city-office/7.jpg?scale=0.5)
+
+!["7"]((chap-online-processing-at-city-office/7.jpg?scale=0.3)
 
 8. 申請先の市区町村があっていることを確認して「次へすすむ」を押下します。
-!["7"]((chap-online-processing-at-city-office/8.jpg?scale=0.5)
+
+!["7"]((chap-online-processing-at-city-office/8.jpg?scale=0.3)
 
 9. 申請するスマホのブラウザや「アプリの確認」「マイナンバーカードの確認」「署名用電子署名書の暗証番号の確認」を聞かれますので、チェックボックスを有効にして「次へすすむ」を押下します。
-!["9"]((chap-online-processing-at-city-office/9.jpg?scale=0.5)
+
+!["9"]((chap-online-processing-at-city-office/9.jpg?scale=0.3)
 
 10. メールアドレス、電話番号の入力をして「次へすすむ」を押下します。
-!["10"]((chap-online-processing-at-city-office/10.jpg?scale=0.5)
+
+!["10"]((chap-online-processing-at-city-office/10.jpg?scale=0.3)
 
 11. 個人情報の入力画面になります、マイナンバーカードから情報を補完できるので、「マイナンバーカードを読み取り」を押下します。
-!["11"]((chap-online-processing-at-city-office/11.jpg?scale=0.5)
+
+!["11"]((chap-online-processing-at-city-office/11.jpg?scale=0.3)
 
 12. 確認画面になるので「カードを読み取る」を押下します。
-!["12"]((chap-online-processing-at-city-office/12.jpg?scale=0.5)
+
+!["12"]((chap-online-processing-at-city-office/12.jpg?scale=0.3)
 
 13. マイナポータルAPアプリが起動し、「券面事項入力補助用」の4桁の番号を入力して「次へ」を押下して、マイナンバーカードを読み取ります。
-!["13"]((chap-online-processing-at-city-office/13.jpg?scale=0.5)
+
+!["13"]((chap-online-processing-at-city-office/13.jpg?scale=0.3)
 
 14. 読み取りが完了すると、氏名、住所、生年月日などが入力済みになっているので足りない箇所を入力して「次へすすむ」を押下します。（「入力内容を保存」を押下すると15.へすすむ）
-!["14"]((chap-online-processing-at-city-office/14.jpg?scale=0.5)
+
+!["14"]((chap-online-processing-at-city-office/14.jpg?scale=0.3)
 
 15. 入力内容の保存をしたい人は、ここでできます。
-!["15"]((chap-online-processing-at-city-office/15.jpg?scale=0.5)
+
+!["15"]((chap-online-processing-at-city-office/15.jpg?scale=0.3)
 
 16. 入力内容の保存して戻って入力再開、世帯主で扶養家族の入力が必要な方は「給付対象者　２」以降も入力します。
-!["16"]((chap-online-processing-at-city-office/16.jpg?scale=0.5)
+
+!["16"]((chap-online-processing-at-city-office/16.jpg?scale=0.3)
 
 17. 受取口座情報を入力し「次へすすむ」を押下します。
-!["17"]((chap-online-processing-at-city-office/17.jpg?scale=0.5)
+
+!["17"]((chap-online-processing-at-city-office/17.jpg?scale=0.3)
 
 18. 確認画面になりますので「次へすすむ」を押下します。 
-!["18"]((chap-online-processing-at-city-office/18.jpg?scale=0.5)
+
+!["18"]((chap-online-processing-at-city-office/18.jpg?scale=0.3)
 
 19. 添付資料の登録します、銀行口座の確認として「キャッシュカード」を撮影するか、「オンラインバンキングのキャプチャー画面」をアップロードします。
-!["19"]((chap-online-processing-at-city-office/19.png?scale=0.5)
+
+!["19"]((chap-online-processing-at-city-office/19.png?scale=0.3)
 
 20. アップロードが終わったら「次へすすむ」を押下します。
-!["20"]((chap-online-processing-at-city-office/20.png?scale=0.5)
+
+!["20"]((chap-online-processing-at-city-office/20.png?scale=0.3)
 
 21. 同意事項が出るので確認して「以上を確認・同意し、次へ」を押下します。
-!["21"]((chap-online-processing-at-city-office/21.png?scale=0.5)
+
+!["21"]((chap-online-processing-at-city-office/21.png?scale=0.3)
 
 22. 電子署名の付与確認画面になります「電子署名を付与する」を押下します。
-!["22"]((chap-online-processing-at-city-office/22.png?scale=0.5)
+
+!["22"]((chap-online-processing-at-city-office/22.png?scale=0.3)
 
 23. マイナポータルAPアプリが起動します「署名用電子証明書」のパスワードを入力し「次へ」を押下します。
-!["23"]((chap-online-processing-at-city-office/23.jpg?scale=0.5)
+
+!["23"]((chap-online-processing-at-city-office/23.jpg?scale=0.3)
 
 24. マイナンバーカードの署名用電子証明書が読み取れました。
-!["24"]((chap-online-processing-at-city-office/24.jpg?scale=0.5)
+
+!["24"]((chap-online-processing-at-city-office/24.jpg?scale=0.3)
 
 25. 送信を実行します、申請する市区町村を確認して「送信する」を押下します。
-!["25"]((chap-online-processing-at-city-office/25.jpg?scale=0.5)
+
+!["25"]((chap-online-processing-at-city-office/25.jpg?scale=0.3)
 
 26. 受付番号が表示されたら申請は完了、念のため「控えをダウンロードする」か「登録アドレスに送信」のどちらかを押下して控えを取っておきましょう。
-!["26"]((chap-online-processing-at-city-office/26.jpg?scale=0.5)
 
-27. 申請完了です！
+!["26"]((chap-online-processing-at-city-office/26.jpg?scale=0.3)
+
+27. 申請完了です。
 
 ### 特別定額給付金申請の控えについて
 メールアドレス宛に特別定額給付金の申請書類の写しを送信するとzipで送信されてきます。スマホだけでzipファイルの解凍は難しいかもしれませんが、解凍すると説明pdfおよび以下のファイルがあります。
-!["27"]((chap-online-processing-at-city-office/27.jpg?scale=0.5)
+!["27"]((chap-online-processing-at-city-office/27.jpg?scale=0.3)
 
 1. 受付番号_申請者情報の控え.pdf
 2. 受付番号_申請様式の控え.pdf
 3. 受付番号_特別定額給付金.csv
-!["28"]((chap-online-processing-at-city-office/28.png?scale=0.5)
+!["28"]((chap-online-processing-at-city-office/28.png?scale=0.3)
 
 csvファイル、漢字コードはUTF-8、改行コードCR+LFで、漢字コードがUTF-8なので解凍さえできればスマホの表計算アプリでも表示ができます。
 
