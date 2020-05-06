@@ -113,7 +113,7 @@ https://www.desktopvpn.net/download/
 ・Windowsの電源設定も見直しておきましょう。1日経ったら繋がらなくなった（PCの電源切れてた）とかはだいたいこれが悪さをしていることが多いです。
 
 入り方はコントロールパネルから、電源オプションを選択し
-![“電源設定の入り方1“](chap-remote-work_env/PowerSetting1.png?scale=0.7)
+![“電源設定の入り方1“](chap-remote-work_env/PowerSetting1.png?scale=0.8)
 
 プラン設定の変更から
 ![“電源設定の入り方2“](chap-remote-work_env/PowerSetting2.png?scale=0.6)
