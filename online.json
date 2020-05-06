@@ -37,8 +37,7 @@
       "chap-online-processing-at-city-office.md",
       "chap-online-hobby.md",
       "chap-zoommeetup.md",
-      "chap-onlineparty.md",
-      "placeholder.md"
+      "chap-onlineparty.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
