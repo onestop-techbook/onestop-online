@@ -173,7 +173,20 @@ IT企業で働くママエンジニアです。最近の楽しみはオンライ
 社会インフラについては趣味で見守るだけです。
 Twitterでも適当に絡んでください、よろしくおねがいします！
 
-
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/ditflame_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        ふーれむ @ditflame https://twitter.com/ditflame\\
+        Qiitaでちょこちょこ技術ネタ書いたりしてます。 https://qiita.com/ditflame\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+大阪在住。前職はSIerでしたが３年前に飽きて今はよくわからない仕事(敢えていうなら社内SEですね…)になりました。
+あと、近畿青年技術士懇親会 http://seigikon.jp\\ って勉強会の幹事をさせていただいています。
+資格は10種以上もってますね。色々あったんですよ…　いやほんと。
 
 
 == 表紙イラスト・デザイン　
