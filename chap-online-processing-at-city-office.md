@@ -47,7 +47,13 @@
 [^number1]: マイナンバー（個人番号）のお知らせ個人番号カード交付申請のご案内 [https://www.soumu.go.jp/main_content/000379957.pdf](https://www.soumu.go.jp/main_content/000379957.pdf)
 
 [^hikaku]: 住民基本台帳カードとマイナンバーカードの比較 [https://www.soumu.go.jp/kojinbango_card/03.html#hikaku](https://www.soumu.go.jp/kojinbango_card/03.html#hikaku)
-
+　
+　
+　
+　
+　
+　
+　
 ## マイナンバーカードの利点
 1. 写真付きなので身分証明書になる。
     * マイナンバー通知カードは身分証明書になりません。
