@@ -159,6 +159,23 @@ SIerの何でも屋さんから、何となくやりたいことに出会えた�
 //}
 IT企業で働くママエンジニアです。最近の楽しみはオンライン勉強会に参加すること。子持ちには参加しやすくてありがたいですね。　　
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/sapi_kawahara.png}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        さっぴー川原 @sapi\_kawahara\\ https://twitter.com/sapi\_kawahara\\
+                \end{minipage}
+    \hspace{1ex}
+//}
+相変わらずの放浪のITエンジニアしております！最近はRuby言語で開発しております！
+社会インフラについては趣味で見守るだけです。
+Twitterでも適当に絡んでください、よろしくおねがいします！
+
+
+
+
 == 表紙イラスト・デザイン　
 
 
