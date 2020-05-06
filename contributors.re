@@ -75,7 +75,7 @@ BtoB向けSaaSのバックエンド開発をしているITエンジニア。Twit
     \end{minipage}
     \begin{minipage}{.89\linewidth}
         KANE @higuyume https://twitter.com/higuyume\\
-        サークル名： growthfaction /
+        サークル名： growthfaction
         \end{minipage}
     \hspace{1ex}
 //}
@@ -121,7 +121,7 @@ SIerの何でも屋さんから、何となくやりたいことに出会えた�
     \end{minipage}
     \begin{minipage}{.89\linewidth}
         もっと@mottox2 https://twitter.com/mottox2\\
-        サークル名： つのぶえ出版 /
+        サークル名： つのぶえ出版
         \end{minipage}
     \hspace{1ex}
 //}
