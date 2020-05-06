@@ -173,7 +173,20 @@ IT企業で働くママエンジニアです。最近の楽しみはオンライ
 社会インフラについては趣味で見守るだけです。
 Twitterでも適当に絡んでください、よろしくおねがいします！
 
+　
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        　
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        せとあず @setazusa     https://hiroyuki.fieldnotes.jp/\\
+        https://pub.fieldnotes.jp/
+        \end{minipage}
+    \hspace{1ex} %コメントとアイコンの間を空けて体裁を整える
+//}
+マネージャーになったのだがやっていることはメンテナンス作業とかAnsibleやTerraformの面倒とか。マネジメントとは…
 
 
 == 表紙イラスト・デザイン　
