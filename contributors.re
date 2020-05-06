@@ -191,9 +191,22 @@ Twitterでも適当に絡んでください、よろしくおねがいします�
 あと、近畿青年技術士懇親会 http://seigikon.jp\\ って勉強会の幹事をさせていただいています。
 資格は10種以上もってますね。色々あったんですよ…　いやほんと。
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/gomana2_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+       ごまなつ @akrolayer https://twitter.com/akrolayer\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+
+メーカセカンダリでWindowsアプリ作ってる人。最近はノートに考えていることを書いてます。podcastもやってたりする。
+趣味はゲーム全般。キーボード入力最適化に燃えてます。在宅になっても、趣味を諦めないことが直近の目標。
+
 
 == 表紙イラスト・デザイン　
-
 
 //embed{
     \begin{minipage}{.1\linewidth}
