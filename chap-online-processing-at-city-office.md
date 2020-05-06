@@ -48,13 +48,7 @@
 
 [^hikaku]: 住民基本台帳カードとマイナンバーカードの比較 [https://www.soumu.go.jp/kojinbango_card/03.html#hikaku](https://www.soumu.go.jp/kojinbango_card/03.html#hikaku)
 
-
-
-
-
-
-
-
+[embed:|latex|\linebreak\clearpage\noindent]
 
 ## マイナンバーカードの利点
 1. 写真付きなので身分証明書になる。
@@ -206,7 +200,7 @@ Android版マイナポータルAP
 
 !["受付番号が表示されたら申請は完了、念のため「控えをダウンロードする」か「登録アドレスに送信」のどちらかを押下して控えを取っておきましょう"](chap-online-processing-at-city-office/26.jpg?scale=0.6)
 
-申請完了です。
+これで申請完了です。
 
 ### 特別定額給付金のオンライン申請による控えについて
 メールアドレス宛に特別定額給付金の申請書類の写しを送信するとzipで送信されてきます。スマホだけでzipファイルの解凍は難しいかもしれませんが、解凍すると説明pdfおよび以下のファイルがあります。
