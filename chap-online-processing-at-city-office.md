@@ -48,8 +48,6 @@
 
 [^hikaku]: 住民基本台帳カードとマイナンバーカードの比較 [https://www.soumu.go.jp/kojinbango_card/03.html#hikaku](https://www.soumu.go.jp/kojinbango_card/03.html#hikaku)
 
-[embed:|latex|\linebreak\clearpage\noindent]
-
 ## マイナンバーカードの利点
 1. 写真付きなので身分証明書になる。
     * マイナンバー通知カードは身分証明書になりません。
