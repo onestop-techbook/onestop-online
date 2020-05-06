@@ -82,21 +82,6 @@ BtoB向けSaaSのバックエンド開発をしているITエンジニア。Twit
 人の力で世界を便利にする企業で働いているWebディレクター
 Podcast生やすお兄さんとして、複数のPodcastを掛け持ちして配信をしています。
 
-
-　
-
-//embed{
-    \begin{minipage}{.1\linewidth}
-        \centering
-        \includegraphics[width=.75\linewidth]{images/contributors/nabekura.jpg}
-    \end{minipage}
-    \begin{minipage}{.89\linewidth}
-        なべくら https://twitter.com/nabe\_\_kurage\\
-        \end{minipage}
-    \hspace{1ex}
-//}
-普段はフロントエンドエンジニアやってます。楽しそうなことには首を突っ込まずにはいられない性格。podcast作ったり、イラスト描いたり、写真撮ったり…物を作ってワクワクしながら生きていきたい！
-
 　
 
 //embed{
@@ -158,6 +143,8 @@ SIerの何でも屋さんから、何となくやりたいことに出会えた�
     \hspace{1ex}
 //}
 IT企業で働くママエンジニアです。最近の楽しみはオンライン勉強会に参加すること。子持ちには参加しやすくてありがたいですね。　　
+
+　
 
 //embed{
     \begin{minipage}{.1\linewidth}
