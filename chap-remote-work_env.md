@@ -116,9 +116,9 @@ https://www.desktopvpn.net/download/
 ![“電源設定の入り方1“](chap-remote-work_env/PowerSetting1.png?scale=0.8)
 
 プラン設定の変更から
-![“電源設定の入り方2“](chap-remote-work_env/PowerSetting2.png?scale=0.5)
+![“電源設定の入り方2“](chap-remote-work_env/PowerSetting2.png?scale=0.7)
 詳細な電源設定の変更に入っておきましょう。
-![“電源設定の入り方3“](chap-remote-work_env/PowerSetting3.png?scale=0.5)
+![“電源設定の入り方3“](chap-remote-work_env/PowerSetting3.png?scale=0.7)
 
 具体的な電源設定ですが、まず時間経過によるスリープ、休止を全て止めましょう。ハイブリッドスリープもしなくて良いですね・・・
 ![“電源設定1“](chap-remote-work_env/PowerSetting4.png?scale=0.6)
