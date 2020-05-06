@@ -82,21 +82,6 @@ BtoB向けSaaSのバックエンド開発をしているITエンジニア。Twit
 人の力で世界を便利にする企業で働いているWebディレクター
 Podcast生やすお兄さんとして、複数のPodcastを掛け持ちして配信をしています。
 
-
-　
-
-//embed{
-    \begin{minipage}{.1\linewidth}
-        \centering
-        \includegraphics[width=.75\linewidth]{images/contributors/nabekura.jpg}
-    \end{minipage}
-    \begin{minipage}{.89\linewidth}
-        なべくら https://twitter.com/nabe\_\_kurage\\
-        \end{minipage}
-    \hspace{1ex}
-//}
-普段はフロントエンドエンジニアやってます。楽しそうなことには首を突っ込まずにはいられない性格。podcast作ったり、イラスト描いたり、写真撮ったり…物を作ってワクワクしながら生きていきたい！
-
 　
 
 //embed{
@@ -159,6 +144,8 @@ SIerの何でも屋さんから、何となくやりたいことに出会えた�
 //}
 IT企業で働くママエンジニアです。最近の楽しみはオンライン勉強会に参加すること。子持ちには参加しやすくてありがたいですね。　　
 
+　
+
 //embed{
     \begin{minipage}{.1\linewidth}
         \centering
@@ -181,12 +168,28 @@ Twitterでも適当に絡んでください、よろしくおねがいします�
         　
     \end{minipage}
     \begin{minipage}{.89\linewidth}
-        せとあず @setazusa     https://hiroyuki.fieldnotes.jp/\\
-        https://pub.fieldnotes.jp/
+        せとあず @setazusa https://hiroyuki.fieldnotes.jp/\\
         \end{minipage}
     \hspace{1ex} %コメントとアイコンの間を空けて体裁を整える
 //}
 マネージャーになったのだがやっていることはメンテナンス作業とかAnsibleやTerraformの面倒とか。マネジメントとは…
+
+　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/ditflame_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        ふーれむ @ditflame https://twitter.com/ditflame\\
+        Qiitaでちょこちょこ技術ネタ書いたりしてます。 https://qiita.com/ditflame\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+大阪在住。前職はSIerでしたが３年前に飽きて今はよくわからない仕事(敢えていうなら社内SEですね…)になりました。
+あと、近畿青年技術士懇親会 http://seigikon.jp\\ って勉強会の幹事をさせていただいています。
+資格は10種以上もってますね。色々あったんですよ…　いやほんと。
 
 
 == 表紙イラスト・デザイン　

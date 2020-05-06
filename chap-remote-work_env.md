@@ -13,9 +13,12 @@ orz.....
 ここに関しては色々と比較検討をしたのですが、以下４点の理由からSoftether社のDesktopVPNを利用する事にしました。
 
 ・社内的な心理的抵抗感が少なそう [^1]
+
 ・私が個人的に同社の製品(PacketiX VPN)を使った事があった
+
 ・新型コロナウイルス感染防止のためテレワーク用 Desktop VPN 無償開放を実施していた
 　(現在６月末まで ※執筆時点での2020/5/5現在) [^2] [^3]
+
 ・リモート接続用のソフトウェアとして枯れていた
 
 [^1]: 筑波大学の学内ベンチャーで国内資本の会社でもあるので…というと話が通りやすかったんですよね。心理的抵抗感を下げるのはこういうケースでは大事だと思いました。
@@ -38,15 +41,21 @@ https://www.desktopvpn.net/download/
 からダウンロードできます。
 
 またこの手のソフトで一番重要ともいえる、接続においての認証方式は、様々な方式が選べるようになっています。
+
 ・(このアプリで設定した独自の)パスワードでの認証方式
+
 ・(このアプリで設定した独自の)ユーザIDとパスワードでの認証方式
+
 ・匿名認証方式
+
 ・Radius認証方式
+
 ・Windowsドメイン認証方式
+
 ・証明書認証方式(※電子証明書もオレオレで良ければ自前発行できるみたい…)
 
 ※なおセキュリティ設定の「高度なユーザー認証機能の設定」の中にオレオレ電子証明書出力機能がいたりします。
-![“オレオレ証明書出力機能“](chap-remote-work_env/oreore.png?scale=0.3)
+![“証明書出力機能“](chap-remote-work_env/oreore.png?scale=0.7)
 電子証明書をクライアント側のPCに渡して設定させるのがハードル高いですけどね・・・。（笑）
 
 どの運用で行くかは予め決めておき、パスワード認証を用いるのであれば長めのランダムパスワードも必要分生成しておきましょう。（ユーザリストが予め決まっているのであれば、IDとユーザパスワードなどもセットで準備しておいてしまうのが後々楽です。）
@@ -59,8 +68,11 @@ https://www.desktopvpn.net/download/
 https://www.desktopvpn.net/download/
 
 から
+
 ・Desktop VPN共有機能有効版(Ver 2.70 Build 8600)
+
 ・Desktop VPN共有機能無効版(Ver 2.70 Build 8600)
+
 のどちらかを導入しましょう。
 なお弊社の場合は穴をあけても管理観点からは嬉しい要素が全くなかったので一括で無効版にしました。
 
@@ -68,9 +80,11 @@ https://www.desktopvpn.net/download/
 各ユーザのリモート接続先PCをセットアップしていく段では、流れでパスワードやセキュリティ設定も併せて設定してしまいましょう。
 
 また、サーバを設定したときに表示される
+
 ・コンピュータID
+
 をメモしておきましょう。
-![“コンピュータID表示例“](chap-remote-work_env/compid.png?scale=0.3)
+![“コンピュータID表示例“](chap-remote-work_env/compid.png?scale=0.7)
 
 #### 会社の(リモート接続先の)PCに接続しに行くPCにクライアントソフトを入れる
 
@@ -87,30 +101,30 @@ https://www.desktopvpn.net/download/
 ・この手のリモート接続ツールは、各種セキュリティ対策ソフトが悪さをする事が往々にあります。各種セキュリティ対策ソフトと干渉した場合、"C:\Program Files (x86)\Desktop VPN Server\DeskServer.exe"　がリモートサーバのソフトウェア本体なので、このアプリケーションを各種セキュリティ対策ソフトの監視対象外に設定する事で状況が改善する事があります。(実際に改善しました。)
 
 ・内部的にはWindowsのRemoteDesktopサービスを使ってるのですが、このサービスが上がってないとダメです。プロパティからスタートアップの種類を「自動」に変更しておきましょう。
-![“リモートデスクトップサービス“](chap-remote-work_env/RemoteDesktop.png?scale=0.3)
-![“設定例“](chap-remote-work_env/RemoteDesktop2.png?scale=0.3)
+![“リモートデスクトップサービス“](chap-remote-work_env/RemoteDesktop.png?scale=0.7)
+![“設定例“](chap-remote-work_env/RemoteDesktop2.png?scale=0.7)
 
 ・Windowsの電源設定も見直しておきましょう。1日経ったら繋がらなくなった（PCの電源切れてた）とかはだいたいこれが悪さをしていることが多いです。
 入り方はコントロールパネルから。
 
 電源オプションを選択し
-![“電源設定の入り方1“](chap-remote-work_env/PowerSetting1.png?scale=0.3)
+![“電源設定の入り方1“](chap-remote-work_env/PowerSetting1.png?scale=0.7)
 プラン設定の変更から
-![“電源設定の入り方2“](chap-remote-work_env/PowerSetting2.png?scale=0.3)
+![“電源設定の入り方2“](chap-remote-work_env/PowerSetting2.png?scale=0.7)
 詳細な電源設定の変更に入っておきましょう。
-![“電源設定の入り方3“](chap-remote-work_env/PowerSetting3.png?scale=0.3)
+![“電源設定の入り方3“](chap-remote-work_env/PowerSetting3.png?scale=0.7)
 
 具体的な電源設定ですが、まず時間経過によるスリープ、休止を全て止めましょう。ハイブリッドスリープもしなくて良いですね・・・
-![“電源設定1“](chap-remote-work_env/PowerSetting4.png?scale=0.3)
+![“電源設定1“](chap-remote-work_env/PowerSetting4.png?scale=0.7)
 スリープ解除タイマーはあまり影響無い気がするのでお好きに・・・
-![“電源設定2“](chap-remote-work_env/PowerSetting5.png?scale=0.3)
+![“電源設定2“](chap-remote-work_env/PowerSetting5.png?scale=0.7)
 USBのディレクティブサスペンドに関しては、USB経由でリモート接続している（USBのNIC使ってるとかレアケースの）場合は無効のほうがいいケースはあります。
-![“電源設定3“](chap-remote-work_env/PowerSetting6.png?scale=0.3)
+![“電源設定3“](chap-remote-work_env/PowerSetting6.png?scale=0.7)
 ノートの場合はカバー閉じてスリープになったりするのもあるあるなので閉じた時の動作も何もしないにしておくほうが幸せな気がします。
 スリープボタンも動作しないようにしておきましょう。
-![“電源設定4“](chap-remote-work_env/PowerSetting7.png?scale=0.3)
+![“電源設定4“](chap-remote-work_env/PowerSetting7.png?scale=0.7)
 リモートしてる時ってディスプレイも普通は要らないはずなので、電源Offのほうが地球にもやさしいですね。
-![“電源設定5“](chap-remote-work_env/PowerSetting8.png?scale=0.3)
+![“電源設定5“](chap-remote-work_env/PowerSetting8.png?scale=0.7)
 
 弊社で電源周りが怪しいな・・・と踏んだ時の電源設定はこんな感じです。
 
