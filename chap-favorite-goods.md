@@ -18,7 +18,7 @@
 
 ## アマチュア無線用イヤホン『DEH17M』 （＠ditflame）
 
-![DEH17M](images/chap-remote-work/DEH17M_1.JPG?scale=0.7)
+![DEH17M](images/chap-favorite-goods/DEH17M_1.JPG?scale=0.7)
 
 http://www.diamond-ant.co.jp/product/ama/handy_op.html
 
@@ -27,7 +27,7 @@ http://www.diamond-ant.co.jp/product/ama/handy_op.html
 
 そういった理由から、アマチュア無線用のイヤホンはニーズに合う人がいるかもしれませんね。
 
-![DEH17Mを分解してみた](images/chap-remote-work/DEH17M_2.JPG?scale=0.7)
+![DEH17Mを分解してみた](images/chap-favorite-goods/DEH17M_2.JPG?scale=0.7)
 
 このイヤホンは業務用でも使えるグレードなので、ちゃんと分解してイヤーピース部が洗えるようになっていたりと細かい仕様がが渋いです。
 (なお、ケーブル断線したときにケーブルだけ取り替える事も可能なようです。結構使ってますが断線してないので、まだその仕様にはお世話になっていないのですが…)
