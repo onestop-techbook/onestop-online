@@ -38,7 +38,8 @@
       "chap-online-hobby.md",
       "chap-hobby.md",
       "chap-onlinejointbook.md",
-      "chap-favorite-goods.md"
+      "chap-favorite-goods.md",
+      "chap-onlinekabeuchi.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
