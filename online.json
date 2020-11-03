@@ -28,6 +28,7 @@
     "CHAPS": [
       "chap-remote-work.md",
       "chap-remote-work_env.md",
+      "chap-remote-health.md",
       "chap-company.md",
       "chap-online-newcommer.md",
       "chap-team-build.md",
@@ -39,6 +40,7 @@
       "chap-hobby.md",
       "chap-onlinejointbook.md",
       "chap-favorite-goods.md",
+      "chap-item-purchased.md",
       "chap-onlinekabeuchi.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
