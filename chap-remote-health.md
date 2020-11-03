@@ -28,7 +28,7 @@ https://www.mhlw.go.jp/content/000539604.pdf
 
 ## はじめに
 
-//quote[1.はじめに]{
+//quote[1.はじめに][1.はじめに]{
 VDT（Visual Display Terminals）作業に従事する
 者の心身の負担を軽減するためには、事業者が作業環
 境をできる限り VDT 作業に適した状況に整備するとと
