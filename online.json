@@ -41,7 +41,8 @@
       "chap-onlinejointbook.md",
       "chap-favorite-goods.md",
       "chap-item-purchased.md",
-      "chap-onlinekabeuchi.md"
+      "chap-onlinekabeuchi.md",
+      "chap-online-eat.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
