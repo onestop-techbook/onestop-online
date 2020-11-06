@@ -224,6 +224,19 @@ Twitterでも適当に絡んでください、よろしくおねがいします�
 光計測の研究をしている学生です。趣味で簡単なゲームとアプリを開発しています。Arduino Unoしか知らなかった七海家に最近ESP32が加わってホクホクしています。
 
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/Aizack_400x400.png}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        Aizack @ykokubo09 https://twitter.com/ykokubo09\\
+        サークル名： 
+        \end{minipage}
+    \hspace{1ex}
+//}
+SIerのSEとして客先に常駐していました。現在は、IoTを学ぶ学生をやっています。
+また、#アイガモラジオ　でPodcastもやっています。ご興味あれば聞いてみてください。
 
 　
 
