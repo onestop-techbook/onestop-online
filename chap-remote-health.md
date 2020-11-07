@@ -326,7 +326,7 @@ VDT（Visual Display Terminals）作業に従事する者の心身の負担を�
 
 本来、体にとって一番負担の少ないとされているポジショニングは下図のようなものです。
 
-![posi](images/chap-remote-health/posi.png?scale=0.7)
+![best_posi](images/chap-remote-health/best_posi.png?scale=0.7)
 
 そう。直立不動ですね。
 
