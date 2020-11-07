@@ -110,7 +110,7 @@ SIerの何でも屋さんから、何となくやりたいことに出会えた�
         \end{minipage}
     \hspace{1ex}
 //}
-フリーランスでウェブフロントエンドを中心にエンジニアリングをやっています。4年ほどリモート中心で働いていたら、いきなりリモートワークが推奨される社会になってびっくりしています。
+主にウェブのフロントエンドとUIデザインをやる人です。4年ほどリモート中心で働いていたら、いきなりリモートワークが推奨される社会になってびっくりしています。
 
 
 
@@ -124,7 +124,7 @@ SIerの何でも屋さんから、何となくやりたいことに出会えた�
     \begin{minipage}{.89\linewidth}
         Soya @thisIsSow https://twitter.com/thisIsSow\\
         \end{minipage}
-    \hspace{1ex} 
+    \hspace{1ex}
 //}
 新米ハードウェアエンジニアです。おうち時間で積読中の技術同人誌を読み進めようとしていた矢先、寄稿させていただくことになりとにかく驚いています！
 
@@ -230,7 +230,7 @@ Twitterでも適当に絡んでください、よろしくおねがいします�
     \end{minipage}
     \begin{minipage}{.89\linewidth}
         Aizack @ykokubo09 https://twitter.com/ykokubo09\\
-        サークル名： 
+        サークル名：
         \end{minipage}
     \hspace{1ex}
 //}
