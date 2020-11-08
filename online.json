@@ -47,7 +47,8 @@
       "chap-onlinekabeuchi.md",
       "chap-online-eat.md",
       "chap-slack-technique.md",
-      "chap-onlinecommunity.md"
+      "chap-onlinecommunity.md",
+      "chap-university.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }

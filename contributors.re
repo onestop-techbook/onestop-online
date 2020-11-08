@@ -238,6 +238,20 @@ SIerのSEとして客先に常駐していました。現在は、IoTを学ぶ�
 
 　
 
+　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/mitubati.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        番屋 翔 @mitsubati2022 https://twitter.com/mitsubati2022\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+田舎の情報系大学院1年生です。応用情報を神頼みでゲットしました。今は、オンライン化の恩恵を受けて、就活費が浮いた分食費が増えました。体重も増えました。
+
 == 表紙イラスト・デザイン　
 
 //embed{
