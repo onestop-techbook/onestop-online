@@ -33,6 +33,7 @@
       "chap-online-newcommer.md",
       "chap-team-build.md",
       "chap-online-mob-tutorial.md",
+      "chap-zoommeetup-basic.md",
       "chap-zoommeetup.md",
       "chap-onlineparty.md",
       "chap-online-processing-at-city-office.md",
@@ -42,11 +43,11 @@
       "chap-hobby.md",
       "chap-onlinejointbook.md",
       "chap-favorite-goods.md",
-      "chap-item-purchased.md",
       "chap-onlinekabeuchi.md",
       "chap-online-eat.md",
       "chap-slack-technique.md",
-      "chap-onlinecommunity.md"
+      "chap-onlinecommunity.md",
+      "chap-university.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
