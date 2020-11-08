@@ -47,7 +47,8 @@
       "chap-online-eat.md",
       "chap-slack-technique.md",
       "chap-onlinecommunity.md",
-      "chap-university.md"
+      "chap-university.md",
+      "chap-online-student.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
