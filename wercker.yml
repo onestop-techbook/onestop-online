@@ -10,7 +10,7 @@ build:
     #   code: npm run epub
     - script:
       name: output artifacts
-      code: cp -r .review $WERCKER_REPORT_ARTIFACTS_DIR/
+      code: cp -r .review $WERCKER_REPORT_ARTIFACTS_DIR/review
 after-steps:
   - slack-notifier:
       url: $SLACK_URL
